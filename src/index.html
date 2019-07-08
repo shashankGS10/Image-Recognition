@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://stackml.com/library-js/stackml.min.js"></script>
+    <script src="./index.js"></script>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="loader" style="display: none"></div>
+    <input type="file" onchange="previewFile()" /><br>
+    <img src="" style="margin: 0px auto; width: auto; height: 350px; display: block;" alt="Image preview...">
+    <canvas style="margin: 0px auto; width: auto; height: 350px; display: none;" id="outputCanvas" width="1408" height="2137"></canvas>
+    <button type="button" id="predict" class="btn btn-sm btn-primary float-right" onclick="predict_img()">Predict</button>
+</body>
+</html>
+<!-- document.querySelector("#predict")
+document.querySelector("#predict") 
+"ga('send', 'event', 'button', 'click', 'Try-Predict-Face-Detection'); mixpanel.track('Try-Predict-Face-Detection');" title="Predict face detection stackml machine learning model"-->
+<!--   results.outputs.forEach(element => {
+          var x_axis=  element.detection.box.x;
+          var y_axis= element.detection.box.y;
+          var width = element.detection.box.width;
+          var height= element.detection.box.height;
+          const newImg  = new Image();
+          newImg =document.createElement("img");
+          newImg.src=happy;
+          newImg.height = height;
+          newImg.width = width;
+          newImg.style.display = "block";
+          ctx.drawImage(newImg, x_axis, y_axis,width,height);
+        
+        }); -->
